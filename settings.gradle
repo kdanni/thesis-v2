@@ -1,0 +1,17 @@
+include 'data-model'
+include 'util-lib'
+include 'derivator'
+include 'validator'
+include 'rate-engine'
+include 'web-api'
+include 'xml-gateway'
+
+rootProject.name = 'thesis-v2'
+
+project(':data-model').projectDir = new File(settingsDir, 'lib/data-model')
+project(':util-lib').projectDir = new File(settingsDir, 'lib/util-lib')
+project(':derivator').projectDir = new File(settingsDir, 'service/derivator')
+project(':validator').projectDir = new File(settingsDir, 'service/validator')
+project(':rate-engine').projectDir = new File(settingsDir, 'service/rate-engine')
+project(':web-api').projectDir = new File(settingsDir, 'service/web-api')
+project(':xml-gateway').projectDir = new File(settingsDir, 'service/xml-gateway')
